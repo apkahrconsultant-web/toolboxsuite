@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Search Console Checklist — ToolBoxSuite.in</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; padding: 2rem 1rem; }
+  .page { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: .4rem; }
+  .subtitle { color: #6b7280; font-size: .95rem; margin-bottom: 2rem; }
+  .phase { background: white; border: 1px solid #e5e7eb; border-radius: 12px; margin-bottom: 1.25rem; overflow: hidden; }
+  .phase-header { display: flex; align-items: center; gap: .75rem; padding: 1rem 1.25rem; border-bottom: 1px solid #f3f4f6; }
+  .phase-num { background: #6366f1; color: white; font-size: .8rem; font-weight: 700; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .phase-title { font-size: 1rem; font-weight: 600; }
+  .phase-time { margin-left: auto; font-size: .78rem; background: #f3f4f6; padding: .25rem .65rem; border-radius: 20px; color: #6b7280; }
+  .step { display: flex; gap: .75rem; align-items: flex-start; padding: .9rem 1.25rem; border-bottom: 1px solid #f9fafb; }
+  .step:last-child { border-bottom: none; }
+  .step input[type=checkbox] { margin-top: .2rem; width: 17px; height: 17px; accent-color: #6366f1; flex-shrink: 0; cursor: pointer; }
+  .step-body { flex: 1; }
+  .step-title { font-size: .92rem; font-weight: 500; margin-bottom: .2rem; }
+  .step-desc { font-size: .83rem; color: #6b7280; line-height: 1.55; }
+  .step-desc a { color: #6366f1; }
+  .step-desc code { background: #f3f4f6; padding: .1rem .4rem; border-radius: 4px; font-size: .8rem; font-family: monospace; }
+  .badge { display: inline-block; font-size: .7rem; font-weight: 600; padding: .15rem .55rem; border-radius: 20px; margin-left: .5rem; vertical-align: middle; }
+  .b-red { background: #fef2f2; color: #dc2626; }
+  .b-yellow { background: #fffbeb; color: #d97706; }
+  .b-green { background: #f0fdf4; color: #16a34a; }
+  .note { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; font-size: .88rem; color: #92400e; }
+  .note strong { display: block; margin-bottom: .3rem; }
+  .progress-bar { background: #e5e7eb; border-radius: 20px; height: 8px; margin-bottom: .4rem; overflow: hidden; }
+  .progress-fill { background: #6366f1; height: 100%; border-radius: 20px; transition: width .3s; }
+  .progress-label { font-size: .8rem; color: #6b7280; margin-bottom: 1.5rem; }
+  .done-state { text-decoration: line-through; opacity: .5; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>🔍 Google Search Console Setup Checklist</h1>
+  <p class="subtitle">For toolboxsuite.in — complete these steps to get indexed on Google. Estimated total time: ~45 minutes.</p>
+
+  <div class="note">
+    <strong>⚠️ Why this is urgent</strong>
+    A search for <code>site:toolboxsuite.in</code> returns zero results — Google has not indexed your website yet. Until you complete this checklist, no one can find your tools through Google search, no matter how good they are.
+  </div>
+
+  <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+  <p class="progress-label" id="progressLabel">0 of 18 steps completed</p>
+
+  <!-- PHASE 1 -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">1</div>
+      <div class="phase-title">Set up Google Search Console</div>
+      <div class="phase-time">⏱ 10 min</div>
+    </div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Go to Google Search Console <span class="badge b-red">Do first</span></div><div class="step-desc">Open <a href="https://search.google.com/search-console" target="_blank">search.google.com/search-console</a> and sign in with your Google account.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Add a new property</div><div class="step-desc">Click <strong>+ Add property</strong> → choose <strong>Domain</strong> type → enter <code>toolboxsuite.in</code> (without https://). Domain type covers all subdomains automatically.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Verify ownership via DNS <span class="badge b-red">Required</span></div><div class="step-desc">Copy the TXT record Google provides (e.g. <code>google-site-verification=abc123...</code>). Log into your domain registrar (GoDaddy / Namecheap / Hostinger etc.) → DNS settings → Add a new TXT record for <code>@</code> with that value. DNS propagation takes 5–30 minutes.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Click "Verify" in Search Console</div><div class="step-desc">After adding the DNS record, return to Search Console and click Verify. If it fails, wait 15 more minutes and try again.</div></div></div>
+  </div>
+
+  <!-- PHASE 2 -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">2</div>
+      <div class="phase-title">Upload sitemap.xml and robots.txt</div>
+      <div class="phase-time">⏱ 5 min</div>
+    </div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Upload sitemap.xml to your server root <span class="badge b-red">Critical</span></div><div class="step-desc">The <code>sitemap.xml</code> file in this download must be accessible at <code>https://toolboxsuite.in/sitemap.xml</code>. Upload it to your web host's root public directory (usually <code>public_html/</code> or <code>www/</code>).</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Upload robots.txt to your server root</div><div class="step-desc">Upload <code>robots.txt</code> to the same root directory. It must be accessible at <code>https://toolboxsuite.in/robots.txt</code>. Test it by opening that URL in your browser after upload.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Submit sitemap in Search Console</div><div class="step-desc">In Search Console, go to <strong>Sitemaps</strong> (left sidebar) → enter <code>sitemap.xml</code> → click <strong>Submit</strong>. Status should change to "Success" within a few minutes.</div></div></div>
+  </div>
+
+  <!-- PHASE 3 -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">3</div>
+      <div class="phase-title">Deploy the new multi-page site structure</div>
+      <div class="phase-time">⏱ 15 min</div>
+    </div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Upload all HTML files to server root <span class="badge b-red">Critical</span></div><div class="step-desc">Upload all <code>.html</code> files from this download to your web root. Each tool now has its own URL: <code>/remove-background</code>, <code>/pdf-to-word</code>, <code>/pdf-merger</code>, etc. This is the #1 change for SEO.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Upload style.css and main.js</div><div class="step-desc">Upload <code>style.css</code> and <code>main.js</code> to the root. All pages reference these as <code>/style.css</code> and <code>/main.js</code>.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Test all 9 tool pages in browser</div><div class="step-desc">Visit each URL and confirm the page loads correctly: <code>/remove-background</code>, <code>/pdf-to-word</code>, <code>/word-to-pdf</code>, <code>/excel-to-pdf</code>, <code>/pdf-to-excel</code>, <code>/image-compressor</code>, <code>/pdf-merger</code>, <code>/image-resizer</code>, <code>/jpg-to-png</code>.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Create an og-image.png for social sharing <span class="badge b-yellow">Recommended</span></div><div class="step-desc">Create a 1200×630px image with your logo, site name, and tagline "Free Online Tools — 100% Private". Upload it as <code>/og-image.png</code>. This appears when someone shares your site on WhatsApp, LinkedIn, Twitter.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Create a favicon.ico</div><div class="step-desc">Export your logo as a 32×32 <code>.ico</code> file and upload as <code>/favicon.ico</code>. Use <a href="https://favicon.io" target="_blank">favicon.io</a> to convert for free. This appears in browser tabs and search results.</div></div></div>
+  </div>
+
+  <!-- PHASE 4 -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">4</div>
+      <div class="phase-title">Request indexing for all pages</div>
+      <div class="phase-time">⏱ 10 min</div>
+    </div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Use URL Inspection to request indexing for homepage</div><div class="step-desc">In Search Console → <strong>URL Inspection</strong> → paste <code>https://toolboxsuite.in/</code> → click <strong>Request Indexing</strong>. Google will prioritise crawling it.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Request indexing for each tool page</div><div class="step-desc">Repeat URL Inspection + Request Indexing for all 9 tool URLs. You can do max 10 requests per day, so do homepage + all 9 tools today: <code>/remove-background</code>, <code>/pdf-to-word</code>, <code>/word-to-pdf</code>, <code>/excel-to-pdf</code>, <code>/pdf-to-excel</code>, <code>/image-compressor</code>, <code>/pdf-merger</code>, <code>/image-resizer</code>, <code>/jpg-to-png</code>.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Wait 3–7 days, then verify indexing</div><div class="step-desc">After a week, search <code>site:toolboxsuite.in</code> on Google. You should see all 10 pages listed. If pages are missing, check Search Console's <strong>Coverage</strong> report for errors.</div></div></div>
+  </div>
+
+  <!-- PHASE 5 -->
+  <div class="phase">
+    <div class="phase-header">
+      <div class="phase-num">5</div>
+      <div class="phase-title">Ongoing — first 30 days</div>
+      <div class="phase-time">⏱ Ongoing</div>
+    </div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Share toolboxsuite.in on your YouTube channel <span class="badge b-green">High ROI</span></div><div class="step-desc">Post a Community tab post or make a short video mentioning the site. Your 19K+ HR subscribers are the perfect audience for PDF and document tools. One post could send hundreds of real visitors — which Google notices and rewards.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Submit to free Indian directories for backlinks <span class="badge b-green">Backlinks</span></div><div class="step-desc">Submit to: <a href="https://indiblogger.in" target="_blank">IndiBlogger</a>, <a href="https://www.producthunt.com" target="_blank">Product Hunt</a>, <a href="https://www.startupindia.gov.in" target="_blank">Startup India</a>, and post on communities like r/IndiaStartups. Each listing creates a backlink which builds domain authority.</div></div></div>
+    <div class="step"><input type="checkbox" onchange="updateProgress()"><div class="step-body"><div class="step-title">Monitor Search Console weekly</div><div class="step-desc">Check <strong>Performance → Search Results</strong> to see which queries bring visitors. Check <strong>Coverage</strong> for crawl errors. Check <strong>Core Web Vitals</strong> for page speed issues. Set a calendar reminder every Monday.</div></div></div>
+  </div>
+
+</div>
+<script>
+function updateProgress() {
+  const boxes = document.querySelectorAll('input[type=checkbox]');
+  const checked = document.querySelectorAll('input[type=checkbox]:checked').length;
+  const pct = Math.round((checked / boxes.length) * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = checked + ' of ' + boxes.length + ' steps completed (' + pct + '%)';
+  boxes.forEach(cb => {
+    const title = cb.closest('.step')?.querySelector('.step-title');
+    if (title) title.classList.toggle('done-state', cb.checked);
+  });
+}
+</script>
+</body>
+</html>
