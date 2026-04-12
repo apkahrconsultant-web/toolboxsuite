@@ -14,14 +14,14 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        'bg-remover': resolve(__dirname, 'bg-remover.html'),
+        'remove-background': resolve(__dirname, 'remove-background.html'),
         'pdf-to-word': resolve(__dirname, 'pdf-to-word.html'),
         'word-to-pdf': resolve(__dirname, 'word-to-pdf.html'),
         'excel-to-pdf': resolve(__dirname, 'excel-to-pdf.html'),
         'pdf-to-excel': resolve(__dirname, 'pdf-to-excel.html'),
-        'compressor': resolve(__dirname, 'compressor.html'),
+        'image-compressor': resolve(__dirname, 'image-compressor.html'),
         'pdf-merger': resolve(__dirname, 'pdf-merger.html'),
-        'resizer': resolve(__dirname, 'resizer.html'),
+        'image-resizer': resolve(__dirname, 'image-resizer.html'),
         'jpg-to-png': resolve(__dirname, 'jpg-to-png.html'),
       },
     },
