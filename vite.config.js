@@ -19,7 +19,7 @@ export default defineConfig({
         'word-to-pdf': resolve(__dirname, 'word-to-pdf.html'),
         'excel-to-pdf': resolve(__dirname, 'excel-to-pdf.html'),
         'pdf-to-excel': resolve(__dirname, 'pdf-to-excel.html'),
-        'compressor': resolve(__dirname, 'compressor.html'),
+        'compressor': resolve(__dirname, 'image-compressor.html'),
         'pdf-merger': resolve(__dirname, 'pdf-merger.html'),
         'resizer': resolve(__dirname, 'resizer.html'),
         'jpg-to-png': resolve(__dirname, 'jpg-to-png.html'),
