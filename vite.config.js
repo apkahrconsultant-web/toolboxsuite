@@ -21,7 +21,7 @@ export default defineConfig({
         'pdf-to-excel': resolve(__dirname, 'pdf-to-excel.html'),
         'compressor': resolve(__dirname, 'image-compressor.html'),
         'pdf-merger': resolve(__dirname, 'pdf-merger.html'),
-        'resizer': resolve(__dirname, 'resizer.html'),
+        'resizer': resolve(__dirname, 'image-resizer.html'),
         'jpg-to-png': resolve(__dirname, 'jpg-to-png.html'),
       },
     },
