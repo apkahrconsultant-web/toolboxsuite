@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Compressor Free Online | ToolBoxSuite</title>
+  <meta name="description" content="Compress images online free — reduce PNG, JPG, WebP file size without quality loss. No sign-up, 100% private, runs in your browser.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://toolboxsuite.in/image-compressor">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Image Compressor Free Online | ToolBoxSuite">
+  <meta property="og:description" content="Compress images online free — reduce PNG, JPG, WebP file size without quality loss. No sign-up, 100% private, runs in your browser.">
+  <meta property="og:image" content="https://toolboxsuite.in/og-image.png">
+  <meta property="og:url" content="https://toolboxsuite.in/image-compressor">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Image Compressor Free Online | ToolBoxSuite">
+  <meta name="twitter:description" content="Compress images online free — reduce PNG, JPG, WebP file size without quality loss. No sign-up, 100% private, runs in your browser.">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Image Compressor Free Online",
+  "url": "https://toolboxsuite.in/image-compressor",
+  "description": "Compress images online free — reduce PNG, JPG, WebP file size without quality loss. No sign-up, 100% private, runs in your browser.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+}
+</script>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="brand">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="28" height="28" rx="8" fill="#6366f1"/>
+        <path d="M7 14h14M14 7v14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span>ToolBox<strong>Suite</strong></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="/remove-background" class="">🖼️ BG Remover</a>
+      <a href="/pdf-to-word" class="">📄 PDF→Word</a>
+      <a href="/word-to-pdf" class="">📝 Word→PDF</a>
+      <a href="/excel-to-pdf" class="">📊 Excel→PDF</a>
+      <a href="/pdf-to-excel" class="">📈 PDF→Excel</a>
+      <a href="/image-compressor" class="active">🗜️ Compressor</a>
+      <a href="/pdf-merger" class="">📑 PDF Merger</a>
+      <a href="/image-resizer" class="">📐 Resizer</a>
+      <a href="/jpg-to-png" class="">🔄 JPG→PNG</a>
+    </nav>
+  </div>
+</header>
+<main class="tool-page">
+  <div class="container">
+    <div class="tool-hero">
+      <h1>🗜️ Image Compressor</h1>
+      <p class="tool-tagline">Reduce image file size with quality control — free, instant, 100% private.</p>
+      <div class="trust-pills">
+        <span>🔒 100% Private</span>
+        <span>⚡ Instant</span>
+        <span>🆓 Free Forever</span>
+        <span>🚫 No Sign-up</span>
+      </div>
+    </div>
+    <div class="tool-card">
+      
+      <div class="drop-zone" id="dropZone">
+        <div class="drop-inner">
+          <div class="drop-icon">📁</div>
+          <p>Drag &amp; drop an image here, or <label for="fileInput" class="browse-link">browse</label></p>
+          <p class="drop-hint">Supports PNG, JPG, WebP</p>
+          <input type="file" id="fileInput" accept="image/*" hidden>
+        </div>
+      </div>
+      <p class="processing-msg" id="processingMsg" style="display:none">Compressing…</p>
+      <div id="compressorPanel" style="display:none">
+        <div class="quality-row">
+          <label>Quality: <strong id="qualityVal">75</strong>%</label>
+          <input type="range" id="qualitySlider" min="10" max="100" value="75">
+        </div>
+        <div class="preview-row">
+          <div class="preview-box"><p class="preview-label">Original</p><img id="originalImg" alt="Original"><p id="origSize" class="size-label"></p></div>
+          <div class="preview-box"><p class="preview-label">Compressed</p><img id="compressedImg" alt="Compressed"><p id="compSize" class="size-label"></p></div>
+        </div>
+        <div class="action-row">
+          <a id="downloadBtn" class="btn btn-primary" download="compressed.jpg">⬇ Download</a>
+          <button class="btn btn-ghost" id="resetBtn">🔄 New Image</button>
+        </div>
+      </div>
+    </div>
+    <div class="related-tools">
+    <h3>You might also need</h3>
+    <div class="related-grid"><a href="/image-resizer" class="related-card">📐 Image Resizer</a><a href="/remove-background" class="related-card">🖼️ BG Remover</a><a href="/jpg-to-png" class="related-card">🔄 JPG to PNG</a></div></div>
+    <div class="content-section">
+      <h2>How to Use Image Compressor</h2>
+      <p>Upload any PNG, JPG, or WebP image and use the quality slider to balance file size and visual fidelity. The side-by-side preview shows both versions with exact file sizes so you can see the savings in real time.</p>
+      <h2>Why Privacy Matters</h2>
+      <p>Images often carry EXIF metadata including GPS coordinates, camera serial numbers, and timestamps. ToolBoxSuite uses the HTML5 Canvas API to compress images entirely in your browser. No pixel data leaves your device.</p>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+  <div class="faq-item">
+    <button class="faq-q">How much can I reduce the file size?</button>
+    <div class="faq-a"><p>Typically 40-80% file size reduction at quality settings between 60-80%.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q">Does compression affect image dimensions?</button>
+    <div class="faq-a"><p>No. Compression only reduces file size. Use the Image Resizer to change dimensions.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q">What output format is used?</button>
+    <div class="faq-a"><p>Compressed images are output as JPEG for maximum compatibility.</p></div>
+  </div></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="brand">
+        <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#6366f1"/><path d="M7 14h14M14 7v14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <span>ToolBox<strong>Suite</strong></span>
+      </a>
+      <p>Free online tools — 100% private, runs in your browser.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Image Tools</h4>
+      <a href="/remove-background">Background Remover</a>
+      <a href="/image-compressor">Image Compressor</a>
+      <a href="/image-resizer">Image Resizer</a>
+      <a href="/jpg-to-png">JPG to PNG</a>
+    </div>
+    <div class="footer-links">
+      <h4>Document Tools</h4>
+      <a href="/pdf-to-word">PDF to Word</a>
+      <a href="/word-to-pdf">Word to PDF</a>
+      <a href="/excel-to-pdf">Excel to PDF</a>
+      <a href="/pdf-to-excel">PDF to Excel</a>
+      <a href="/pdf-merger">PDF Merger</a>
+    </div>
+    <div class="footer-trust">
+      <div class="trust-badge">🔒 100% Private</div>
+      <div class="trust-badge">⚡ No Sign-up</div>
+      <div class="trust-badge">🆓 Always Free</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2025 ToolBoxSuite.in · All processing happens in your browser. Your files never leave your device.</div>
+  </div>
+</footer>
+<script src="/main.js"></script>
+</body></html>
