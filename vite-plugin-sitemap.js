@@ -9,7 +9,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const SITE_URL = 'https://toolboxsuite.com'; // ← Change to your production domain
+const SITE_URL = 'https://toolboxsuite.in'; // ← Change to your production domain
 
 /**
  * Map each tab ID to a human-friendly tool name and optional priority.
