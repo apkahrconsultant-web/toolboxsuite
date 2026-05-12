@@ -1,63 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ===================== MAIN PAGES ===================== -->
+
   <url>
     <loc>https://toolboxsuite.in/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://toolboxsuite.in/remove-background</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://toolboxsuite.in/about.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://toolboxsuite.in/privacy-policy.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- ===================== IMAGE TOOLS ===================== -->
+
+  <url>
+    <loc>https://toolboxsuite.in/image-compressor.html</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://toolboxsuite.in/pdf-to-word</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://toolboxsuite.in/image-resizer.html</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://toolboxsuite.in/word-to-pdf</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://toolboxsuite.in/image-converter.html</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://toolboxsuite.in/excel-to-pdf</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://toolboxsuite.in/jpg-to-png.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://toolboxsuite.in/png-to-jpg.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://toolboxsuite.in/webp-converter.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://toolboxsuite.in/image-cropper.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===================== PDF TOOLS ===================== -->
+
+  <url>
+    <loc>https://toolboxsuite.in/pdf-compressor.html</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://toolboxsuite.in/pdf-to-excel</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://toolboxsuite.in/pdf-merger.html</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://toolboxsuite.in/image-compressor</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://toolboxsuite.in/pdf-splitter.html</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://toolboxsuite.in/pdf-merger</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://toolboxsuite.in/pdf-to-jpg.html</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://toolboxsuite.in/image-resizer</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://toolboxsuite.in/jpg-to-pdf.html</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://toolboxsuite.in/jpg-to-png</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://toolboxsuite.in/png-to-pdf.html</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
+
+  <!-- ===================== DOCUMENT TOOLS ===================== -->
+
+  <url>
+    <loc>https://toolboxsuite.in/word-counter.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://toolboxsuite.in/text-case-converter.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
