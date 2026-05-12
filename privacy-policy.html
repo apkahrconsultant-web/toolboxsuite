@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | ToolBoxSuite</title>
+  <meta name="description" content="ToolBoxSuite privacy policy — your files never leave your device. 100% browser-based processing, zero data collection." />
+  <meta property="og:title" content="Privacy Policy | ToolBoxSuite" />
+  <meta property="og:description" content="ToolBoxSuite never uploads your files. All processing runs in your browser." />
+  <meta property="og:image" content="https://toolboxsuite.in/og-image.png" />
+  <meta property="og:url" content="https://toolboxsuite.in/privacy-policy.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://toolboxsuite.in/privacy-policy.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1117;
+      --bg2: #1a1d27;
+      --bg3: #22263a;
+      --border: #2a2e42;
+      --text: #e8eaf0;
+      --muted: #8b90a8;
+      --accent: #6c63ff;
+      --card-bg: #181b28;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: rgba(15,17,23,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0 1.5rem;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      height: 56px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-inner::-webkit-scrollbar { display: none; }
+    .nav-logo { font-size: 1.15rem; font-weight: 700; color: var(--text); text-decoration: none; white-space: nowrap; flex-shrink: 0; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 0.25rem; align-items: center; flex-shrink: 0; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.78rem; font-weight: 500; padding: 0.35rem 0.65rem; border-radius: 6px; white-space: nowrap; transition: background 0.15s, color 0.15s; }
+    .nav-links a:hover { background: var(--bg3); color: var(--text); }
+    .nav-cta { margin-left: auto; flex-shrink: 0; background: var(--accent); color: #fff !important; padding: 0.4rem 1rem !important; border-radius: 8px !important; font-weight: 600 !important; font-size: 0.8rem !important; }
+    .nav-cta:hover { background: #5a52e0 !important; }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 1.5rem 3rem;
+      background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(108,99,255,0.18) 0%, transparent 70%);
+    }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(67,217,173,0.1); border: 1px solid rgba(67,217,173,0.3); color: #43d9ad; font-size: 0.75rem; font-weight: 600; padding: 0.35rem 0.9rem; border-radius: 100px; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1.5rem; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
+    .hero h1 span { color: var(--accent); }
+    .hero p { font-size: 1rem; color: var(--muted); }
+    .hero-updated { font-size: 0.82rem; color: var(--muted); margin-top: 0.75rem; }
+
+    .content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* TOC */
+    .toc {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .toc h3 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 0.85rem; }
+    .toc ol { list-style: none; counter-reset: toc; }
+    .toc li { counter-increment: toc; display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.45rem; }
+    .toc li::before { content: counter(toc); background: var(--bg3); color: var(--accent); font-size: 0.75rem; font-weight: 700; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .toc a { color: var(--muted); text-decoration: none; font-size: 0.9rem; transition: color 0.15s; }
+    .toc a:hover { color: var(--text); }
+
+    /* Sections */
+    .section { margin-bottom: 2.5rem; }
+    .section h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem; scroll-margin-top: 72px; }
+    .section h2 .num { background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .section p { color: var(--muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 0.85rem; }
+    .section ul { list-style: none; margin: 0.5rem 0 0.85rem; }
+    .section ul li { color: var(--muted); font-size: 0.95rem; padding: 0.4rem 0 0.4rem 1.5rem; position: relative; }
+    .section ul li::before { content: '✓'; position: absolute; left: 0; color: #43d9ad; font-weight: 700; }
+
+    .highlight-box {
+      background: rgba(67,217,173,0.06);
+      border: 1px solid rgba(67,217,173,0.2);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .highlight-box p { color: #43d9ad; font-weight: 600; font-size: 0.95rem; margin: 0; }
+
+    .contact-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .contact-box p { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.75rem; }
+    .contact-box a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .contact-box a:hover { text-decoration: underline; }
+
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      padding: 3rem 1.5rem 2rem;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; }
+    @media (max-width: 768px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; } }
+    .footer-brand p { color: var(--muted); font-size: 0.88rem; margin-top: 0.6rem; line-height: 1.6; }
+    .footer-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+    .footer-badge { background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.78rem; color: var(--muted); }
+    .footer-col h4 { font-size: 0.8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.85rem; }
+    .footer-col a { display: block; color: var(--muted); text-decoration: none; font-size: 0.88rem; margin-bottom: 0.5rem; transition: color 0.15s; }
+    .footer-col a:hover { color: var(--text); }
+    .footer-bottom { max-width: 1200px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="https://toolboxsuite.in/" class="nav-logo">ToolBox<span>Suite</span></a>
+      <div class="nav-links">
+        <a href="https://toolboxsuite.in/remove-background">🖼️ BG Remover</a>
+        <a href="https://toolboxsuite.in/pdf-to-word">📄 PDF→Word</a>
+        <a href="https://toolboxsuite.in/word-to-pdf">📝 Word→PDF</a>
+        <a href="https://toolboxsuite.in/excel-to-pdf">📊 Excel→PDF</a>
+        <a href="https://toolboxsuite.in/pdf-to-excel">📈 PDF→Excel</a>
+        <a href="https://toolboxsuite.in/image-compressor">🗜️ Compressor</a>
+        <a href="https://toolboxsuite.in/pdf-merger">📑 PDF Merger</a>
+        <a href="https://toolboxsuite.in/image-resizer">📐 Resizer</a>
+        <a href="https://toolboxsuite.in/jpg-to-png">🔄 JPG→PNG</a>
+      </div>
+      <a href="https://toolboxsuite.in/remove-background" class="nav-links nav-cta">Try Free →</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-badge">🔒 Zero Data Collection</div>
+    <h1><span>Privacy</span> Policy</h1>
+    <p>We built ToolBoxSuite so you never have to worry about your files.</p>
+    <p class="hero-updated">Last updated: May 12, 2026</p>
+  </section>
+
+  <div class="content">
+
+    <div class="highlight-box">
+      <p>🔒 TL;DR — Your files never leave your device. We don't collect, store, or process any files you use on ToolBoxSuite.</p>
+    </div>
+
+    <div class="toc">
+      <h3>Contents</h3>
+      <ol>
+        <li><a href="#data-we-collect">Data We Collect</a></li>
+        <li><a href="#files-processing">How Your Files Are Processed</a></li>
+        <li><a href="#cookies">Cookies & Analytics</a></li>
+        <li><a href="#third-parties">Third-Party Services</a></li>
+        <li><a href="#children">Children's Privacy</a></li>
+        <li><a href="#changes">Changes to This Policy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </div>
+
+    <div class="section" id="data-we-collect">
+      <h2><span class="num">1</span> Data We Collect</h2>
+      <p>ToolBoxSuite is designed to collect as little data as possible. Here is what we may collect:</p>
+      <ul>
+        <li>Basic anonymous usage analytics (pages visited, tool usage counts) — no personal identifiers</li>
+        <li>Browser type and device type for compatibility improvements</li>
+        <li>General geographic region (country level) for analytics</li>
+      </ul>
+      <p>We do <strong style="color:var(--text)">not</strong> collect your name, email address, IP address, or any personal information unless you contact us directly.</p>
+    </div>
+
+    <div class="section" id="files-processing">
+      <h2><span class="num">2</span> How Your Files Are Processed</h2>
+      <p>This is the most important section. Every tool on ToolBoxSuite runs entirely inside your browser using WebAssembly and on-device AI technologies.</p>
+      <ul>
+        <li>Your files are never uploaded to our servers</li>
+        <li>Your files are never transmitted over the internet</li>
+        <li>Your files are never stored anywhere outside your own device</li>
+        <li>Processing happens locally on your CPU/GPU</li>
+        <li>When you close or refresh the page, all file data is cleared from memory</li>
+      </ul>
+      <p>This architecture means we are physically incapable of accessing the files you process on ToolBoxSuite.</p>
+    </div>
+
+    <div class="section" id="cookies">
+      <h2><span class="num">3</span> Cookies &amp; Analytics</h2>
+      <p>We may use minimal, privacy-respecting analytics to understand how our tools are used so we can improve them. Any analytics we use:</p>
+      <ul>
+        <li>Do not track you across websites</li>
+        <li>Do not build personal profiles</li>
+        <li>Do not sell data to advertisers</li>
+      </ul>
+      <p>We do not use advertising cookies or retargeting pixels of any kind.</p>
+    </div>
+
+    <div class="section" id="third-parties">
+      <h2><span class="num">4</span> Third-Party Services</h2>
+      <p>ToolBoxSuite uses the following third-party services to function:</p>
+      <ul>
+        <li>Google Fonts — for typography (fonts are loaded from Google's CDN)</li>
+        <li>Web hosting / CDN provider — for serving the website files</li>
+      </ul>
+      <p>These services have their own privacy policies and may log standard web request data (IP addresses, user agents) as part of normal CDN/hosting operation. We have no control over this data.</p>
+    </div>
+
+    <div class="section" id="children">
+      <h2><span class="num">5</span> Children's Privacy</h2>
+      <p>ToolBoxSuite does not knowingly collect any information from children under 13. Our tools are general-purpose productivity tools suitable for all ages. Since we collect no personal data, there is no special risk to children using our tools.</p>
+    </div>
+
+    <div class="section" id="changes">
+      <h2><span class="num">6</span> Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last updated" date at the top. We encourage you to review this page periodically. Continued use of ToolBoxSuite after changes constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <div class="section" id="contact">
+      <h2><span class="num">7</span> Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please reach out:</p>
+      <div class="contact-box">
+        <p>Questions about privacy? We're happy to help.</p>
+        <a href="https://toolboxsuite.in/contact.html">Contact us →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="https://toolboxsuite.in/" class="nav-logo">ToolBox<span style="color:var(--accent)">Suite</span></a>
+        <p>Free online tools — 100% private, runs in your browser. Your files never leave your device.</p>
+        <div class="footer-badges">
+          <span class="footer-badge">🔒 100% Private</span>
+          <span class="footer-badge">⚡ No Sign-up</span>
+          <span class="footer-badge">🆓 Always Free</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Image Tools</h4>
+        <a href="https://toolboxsuite.in/remove-background">Background Remover</a>
+        <a href="https://toolboxsuite.in/image-compressor">Image Compressor</a>
+        <a href="https://toolboxsuite.in/image-resizer">Image Resizer</a>
+        <a href="https://toolboxsuite.in/jpg-to-png">JPG to PNG</a>
+      </div>
+      <div class="footer-col">
+        <h4>Document Tools</h4>
+        <a href="https://toolboxsuite.in/pdf-to-word">PDF to Word</a>
+        <a href="https://toolboxsuite.in/word-to-pdf">Word to PDF</a>
+        <a href="https://toolboxsuite.in/excel-to-pdf">Excel to PDF</a>
+        <a href="https://toolboxsuite.in/pdf-to-excel">PDF to Excel</a>
+        <a href="https://toolboxsuite.in/pdf-merger">PDF Merger</a>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <a href="https://toolboxsuite.in/">Home</a>
+        <a href="https://toolboxsuite.in/about.html">About</a>
+        <a href="https://toolboxsuite.in/privacy-policy.html">Privacy Policy</a>
+        <a href="https://toolboxsuite.in/contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 ToolBoxSuite.in · All processing happens in your browser. Your files never leave your device. Made with ❤️ in India 🇮🇳
+    </div>
+  </footer>
+
+</body>
+</html>

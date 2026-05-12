@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | ToolBoxSuite</title>
+  <meta name="description" content="Learn about ToolBoxSuite — free online image and document tools that run 100% in your browser. No sign-up, no uploads, completely private." />
+  <meta property="og:title" content="About Us | ToolBoxSuite" />
+  <meta property="og:description" content="Free online tools built for privacy. Everything runs in your browser." />
+  <meta property="og:image" content="https://toolboxsuite.in/og-image.png" />
+  <meta property="og:url" content="https://toolboxsuite.in/about.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://toolboxsuite.in/about.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1117;
+      --bg2: #1a1d27;
+      --bg3: #22263a;
+      --border: #2a2e42;
+      --text: #e8eaf0;
+      --muted: #8b90a8;
+      --accent: #6c63ff;
+      --accent2: #ff6584;
+      --green: #43d9ad;
+      --card-bg: #181b28;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav {
+      background: rgba(15,17,23,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0 1.5rem;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      height: 56px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-inner::-webkit-scrollbar { display: none; }
+    .nav-logo {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links {
+      display: flex;
+      gap: 0.25rem;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-links a:hover { background: var(--bg3); color: var(--text); }
+    .nav-cta {
+      margin-left: auto;
+      flex-shrink: 0;
+      background: var(--accent);
+      color: #fff !important;
+      padding: 0.4rem 1rem !important;
+      border-radius: 8px !important;
+      font-weight: 600 !important;
+      font-size: 0.8rem !important;
+    }
+    .nav-cta:hover { background: #5a52e0 !important; color: #fff !important; }
+
+    /* ── HERO ── */
+    .hero {
+      text-align: center;
+      padding: 5rem 1.5rem 3rem;
+      background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(108,99,255,0.18) 0%, transparent 70%);
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(108,99,255,0.12);
+      border: 1px solid rgba(108,99,255,0.3);
+      color: #a09df5;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.35rem 0.9rem;
+      border-radius: 100px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ── CONTENT ── */
+    .content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .card h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      line-height: 1.75;
+    }
+    .card p + p { margin-top: 0.75rem; }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .value-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .value-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .value-icon { font-size: 1.6rem; margin-bottom: 0.75rem; display: block; }
+    .value-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .value-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+
+    .tools-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+    .tool-tag {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .tool-tag:hover { border-color: var(--accent); color: var(--text); }
+
+    .made-in {
+      text-align: center;
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .made-in strong { color: var(--text); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      padding: 3rem 1.5rem 2rem;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+    .footer-brand p { color: var(--muted); font-size: 0.88rem; margin-top: 0.6rem; line-height: 1.6; }
+    .footer-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+    .footer-badge {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .footer-col h4 { font-size: 0.8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.85rem; }
+    .footer-col a { display: block; color: var(--muted); text-decoration: none; font-size: 0.88rem; margin-bottom: 0.5rem; transition: color 0.15s; }
+    .footer-col a:hover { color: var(--text); }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 2rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="https://toolboxsuite.in/" class="nav-logo">ToolBox<span>Suite</span></a>
+      <div class="nav-links">
+        <a href="https://toolboxsuite.in/remove-background">🖼️ BG Remover</a>
+        <a href="https://toolboxsuite.in/pdf-to-word">📄 PDF→Word</a>
+        <a href="https://toolboxsuite.in/word-to-pdf">📝 Word→PDF</a>
+        <a href="https://toolboxsuite.in/excel-to-pdf">📊 Excel→PDF</a>
+        <a href="https://toolboxsuite.in/pdf-to-excel">📈 PDF→Excel</a>
+        <a href="https://toolboxsuite.in/image-compressor">🗜️ Compressor</a>
+        <a href="https://toolboxsuite.in/pdf-merger">📑 PDF Merger</a>
+        <a href="https://toolboxsuite.in/image-resizer">📐 Resizer</a>
+        <a href="https://toolboxsuite.in/jpg-to-png">🔄 JPG→PNG</a>
+      </div>
+      <a href="https://toolboxsuite.in/remove-background" class="nav-links nav-cta">Try Free →</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">🇮🇳 Made in India</div>
+    <h1>Built for <span>Privacy</span>,<br>Free for Everyone</h1>
+    <p>ToolBoxSuite is a collection of free browser-based tools for images and documents — no sign-up, no uploads, no servers involved.</p>
+  </section>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <div class="card">
+      <span class="card-icon">💡</span>
+      <h2>Our Story</h2>
+      <p>ToolBoxSuite was born out of a simple frustration: most online tools force you to upload your files to a remote server, create an account, and pay after a few uses. We believed there was a better way.</p>
+      <p>We built ToolBoxSuite to prove that powerful tools don't have to compromise your privacy. Every tool on this site runs entirely inside your browser using modern web technologies — your files never leave your device, ever.</p>
+    </div>
+
+    <div class="card">
+      <span class="card-icon">🎯</span>
+      <h2>Our Mission</h2>
+      <p>To give everyone — students, professionals, small businesses, and creators across India and the world — access to professional-grade file tools that are fast, private, and completely free. No paywalls, no watermarks, no limits.</p>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <span class="value-icon">🔒</span>
+        <h3>100% Private</h3>
+        <p>All processing happens locally using WebAssembly and on-device AI. Zero bytes are ever uploaded to any server.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">⚡</span>
+        <h3>Instant</h3>
+        <p>No upload queues, no server delays. Results in seconds, directly on your device.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">🆓</span>
+        <h3>Always Free</h3>
+        <p>No subscriptions, no watermarks, no daily limits. All 9 tools are completely free forever.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">📱</span>
+        <h3>Works Everywhere</h3>
+        <p>Fully optimised for mobile, tablet, and desktop. Works on any modern browser.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-icon">🧰</span>
+      <h2>Our Tools</h2>
+      <p>We currently offer 9 free tools across image and document processing:</p>
+      <div class="tools-list">
+        <a href="https://toolboxsuite.in/remove-background" class="tool-tag">🖼️ Background Remover</a>
+        <a href="https://toolboxsuite.in/image-compressor" class="tool-tag">🗜️ Image Compressor</a>
+        <a href="https://toolboxsuite.in/image-resizer" class="tool-tag">📐 Image Resizer</a>
+        <a href="https://toolboxsuite.in/jpg-to-png" class="tool-tag">🔄 JPG to PNG</a>
+        <a href="https://toolboxsuite.in/pdf-to-word" class="tool-tag">📄 PDF to Word</a>
+        <a href="https://toolboxsuite.in/word-to-pdf" class="tool-tag">📝 Word to PDF</a>
+        <a href="https://toolboxsuite.in/excel-to-pdf" class="tool-tag">📊 Excel to PDF</a>
+        <a href="https://toolboxsuite.in/pdf-to-excel" class="tool-tag">📈 PDF to Excel</a>
+        <a href="https://toolboxsuite.in/pdf-merger" class="tool-tag">📑 PDF Merger</a>
+      </div>
+    </div>
+
+    <div class="made-in">
+      Made with ❤️ in India 🇮🇳 &nbsp;·&nbsp; <strong>ToolBoxSuite.in</strong>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="https://toolboxsuite.in/" class="nav-logo">ToolBox<span style="color:var(--accent)">Suite</span></a>
+        <p>Free online tools — 100% private, runs in your browser. Your files never leave your device.</p>
+        <div class="footer-badges">
+          <span class="footer-badge">🔒 100% Private</span>
+          <span class="footer-badge">⚡ No Sign-up</span>
+          <span class="footer-badge">🆓 Always Free</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Image Tools</h4>
+        <a href="https://toolboxsuite.in/remove-background">Background Remover</a>
+        <a href="https://toolboxsuite.in/image-compressor">Image Compressor</a>
+        <a href="https://toolboxsuite.in/image-resizer">Image Resizer</a>
+        <a href="https://toolboxsuite.in/jpg-to-png">JPG to PNG</a>
+      </div>
+      <div class="footer-col">
+        <h4>Document Tools</h4>
+        <a href="https://toolboxsuite.in/pdf-to-word">PDF to Word</a>
+        <a href="https://toolboxsuite.in/word-to-pdf">Word to PDF</a>
+        <a href="https://toolboxsuite.in/excel-to-pdf">Excel to PDF</a>
+        <a href="https://toolboxsuite.in/pdf-to-excel">PDF to Excel</a>
+        <a href="https://toolboxsuite.in/pdf-merger">PDF Merger</a>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <a href="https://toolboxsuite.in/">Home</a>
+        <a href="https://toolboxsuite.in/about.html">About</a>
+        <a href="https://toolboxsuite.in/privacy-policy.html">Privacy Policy</a>
+        <a href="https://toolboxsuite.in/contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 ToolBoxSuite.in · All processing happens in your browser. Your files never leave your device. Made with ❤️ in India 🇮🇳
+    </div>
+  </footer>
+
+</body>
+</html>
