@@ -1,8 +1,0 @@
-# ToolBoxSuite — robots.txt
-# All tools run client-side; nothing sensitive to block.
-
-User-agent: *
-Allow: /
-
-# Sitemap (auto-generated at build time by vite-plugin-sitemap)
-Sitemap: https://toolboxsuite.com/sitemap.xml
