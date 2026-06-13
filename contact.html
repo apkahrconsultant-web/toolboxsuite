@@ -4,320 +4,202 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us | ToolBoxSuite</title>
-  <meta name="description" content="Get in touch with ToolBoxSuite — report a bug, suggest a tool, or ask anything about our free online image and document tools." />
+  <meta name="description" content="Get in touch with ToolBoxSuite — send us feedback, report a bug, or suggest a new tool." />
+  <link rel="canonical" href="https://toolboxsuite.in/contact" />
   <meta property="og:title" content="Contact Us | ToolBoxSuite" />
-  <meta property="og:description" content="Get in touch with ToolBoxSuite — free online image and document tools." />
-  <meta property="og:image" content="https://toolboxsuite.in/og-image.png" />
-  <meta property="og:url" content="https://toolboxsuite.in/contact.html" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://toolboxsuite.in/contact" />
+  <meta property="og:image" content="https://toolboxsuite.in/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="canonical" href="https://toolboxsuite.in/contact.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
 
-    :root {
-      --bg: #0f1117;
-      --bg2: #1a1d27;
-      --bg3: #22263a;
-      --border: #2a2e42;
-      --text: #e8eaf0;
-      --muted: #8b90a8;
-      --accent: #6c63ff;
-      --card-bg: #181b28;
-      --green: #43d9ad;
+    nav { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 0 1rem; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .logo { font-size: 1.25rem; font-weight: 700; color: #111827; text-decoration: none; letter-spacing: -0.5px; }
+    .logo em { color: #6366f1; font-style: normal; }
+    .nav-tools { display: flex; gap: 6px; overflow-x: auto; flex: 1; margin: 0 16px; scrollbar-width: none; }
+    .nav-tools::-webkit-scrollbar { display: none; }
+    .nav-tools a { white-space: nowrap; font-size: 0.78rem; color: #374151; text-decoration: none; padding: 4px 8px; border-radius: 6px; transition: background 0.15s; }
+    .nav-tools a:hover { background: #f3f4f6; }
+    .nav-cta { background: #6366f1; color: #fff; border: none; border-radius: 8px; padding: 7px 14px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; white-space: nowrap; }
+    .nav-cta:hover { background: #4f46e5; }
+
+    main { max-width: 800px; margin: 0 auto; padding: 60px 1.5rem 80px; }
+    h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .subtitle { font-size: 1.05rem; color: #6b7280; margin-bottom: 48px; }
+
+    .contact-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 40px; align-items: start; }
+    @media (max-width: 640px) { .contact-layout { grid-template-columns: 1fr; } }
+
+    .contact-info h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 14px; }
+    .info-item { display: flex; gap: 12px; margin-bottom: 20px; align-items: flex-start; }
+    .info-icon { font-size: 1.3rem; line-height: 1; margin-top: 2px; }
+    .info-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #9ca3af; margin-bottom: 2px; }
+    .info-val { font-size: 0.9rem; color: #374151; }
+    .info-val a { color: #6366f1; text-decoration: none; }
+
+    .reasons { margin-top: 28px; }
+    .reasons h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 12px; }
+    .reason-tag { display: inline-block; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 20px; padding: 4px 12px; font-size: 0.8rem; color: #374151; margin: 0 4px 6px 0; }
+
+    .form-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 28px 28px 24px; }
+    .form-group { margin-bottom: 18px; }
+    label { display: block; font-size: 0.85rem; font-weight: 600; color: #374151; margin-bottom: 6px; }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%; padding: 10px 14px; border: 1px solid #d1d5db; border-radius: 8px;
+      font-size: 0.92rem; font-family: inherit; color: #111827; background: #fff;
+      transition: border-color 0.15s, box-shadow 0.15s; outline: none;
     }
+    input:focus, select:focus, textarea:focus { border-color: #6366f1; box-shadow: 0 0 0 3px rgba(99,102,241,0.12); }
+    textarea { resize: vertical; min-height: 110px; }
+    select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px; }
 
-    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.6; }
-
-    nav { background: rgba(15,17,23,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; padding: 0 1.5rem; }
-    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 1rem; height: 56px; overflow-x: auto; scrollbar-width: none; }
-    .nav-inner::-webkit-scrollbar { display: none; }
-    .nav-logo { font-size: 1.15rem; font-weight: 700; color: var(--text); text-decoration: none; white-space: nowrap; flex-shrink: 0; }
-    .nav-logo span { color: var(--accent); }
-    .nav-links { display: flex; gap: 0.25rem; align-items: center; flex-shrink: 0; }
-    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.78rem; font-weight: 500; padding: 0.35rem 0.65rem; border-radius: 6px; white-space: nowrap; transition: background 0.15s, color 0.15s; }
-    .nav-links a:hover { background: var(--bg3); color: var(--text); }
-    .nav-cta { margin-left: auto; flex-shrink: 0; background: var(--accent); color: #fff !important; padding: 0.4rem 1rem !important; border-radius: 8px !important; font-weight: 600 !important; font-size: 0.8rem !important; }
-    .nav-cta:hover { background: #5a52e0 !important; }
-
-    .hero { text-align: center; padding: 5rem 1.5rem 3rem; background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(108,99,255,0.18) 0%, transparent 70%); }
-    .hero-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(108,99,255,0.12); border: 1px solid rgba(108,99,255,0.3); color: #a09df5; font-size: 0.75rem; font-weight: 600; padding: 0.35rem 0.9rem; border-radius: 100px; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1.5rem; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
-    .hero h1 span { color: var(--accent); }
-    .hero p { font-size: 1.05rem; color: var(--muted); max-width: 480px; margin: 0 auto; }
-
-    .content { max-width: 860px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
-
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
-    @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
-
-    /* Contact form */
-    .form-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 2rem;
-    }
-    .form-card h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; }
-
-    .form-group { margin-bottom: 1.1rem; }
-    .form-group label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--muted); margin-bottom: 0.45rem; text-transform: uppercase; letter-spacing: 0.04em; }
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      color: var(--text);
-      font-family: inherit;
-      font-size: 0.95rem;
-      padding: 0.75rem 1rem;
-      outline: none;
-      transition: border-color 0.2s;
-      resize: vertical;
-    }
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus { border-color: var(--accent); }
-    .form-group textarea { min-height: 120px; }
-    .form-group select option { background: var(--bg2); }
-
-    .submit-btn {
-      width: 100%;
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      border-radius: 10px;
-      font-family: inherit;
-      font-size: 1rem;
-      font-weight: 700;
-      padding: 0.85rem;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.1s;
-      margin-top: 0.5rem;
-    }
-    .submit-btn:hover { background: #5a52e0; }
+    .submit-btn { width: 100%; background: #6366f1; color: #fff; border: none; border-radius: 10px; padding: 12px; font-size: 0.95rem; font-weight: 700; cursor: pointer; transition: background 0.15s, transform 0.1s; margin-top: 4px; }
+    .submit-btn:hover { background: #4f46e5; }
     .submit-btn:active { transform: scale(0.98); }
+    .submit-btn:disabled { background: #a5b4fc; cursor: not-allowed; }
 
-    .success-msg {
-      display: none;
-      background: rgba(67,217,173,0.08);
-      border: 1px solid rgba(67,217,173,0.3);
-      border-radius: 10px;
-      padding: 1rem 1.25rem;
-      color: var(--green);
-      font-size: 0.95rem;
-      font-weight: 600;
-      margin-top: 1rem;
-      text-align: center;
-    }
+    .success-msg { display: none; text-align: center; padding: 20px; }
+    .success-msg .check { font-size: 2.5rem; margin-bottom: 10px; }
+    .success-msg h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; }
+    .success-msg p { font-size: 0.9rem; color: #6b7280; margin: 0; }
 
-    /* Info cards */
-    .info-stack { display: flex; flex-direction: column; gap: 1rem; }
-    .info-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1.4rem;
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-      transition: border-color 0.2s;
-    }
-    .info-card:hover { border-color: var(--accent); }
-    .info-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 0.1rem; }
-    .info-card h3 { font-size: 0.97rem; font-weight: 700; margin-bottom: 0.3rem; }
-    .info-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
-    .info-card a { color: var(--accent); text-decoration: none; font-weight: 600; }
-    .info-card a:hover { text-decoration: underline; }
+    .privacy-note { font-size: 0.78rem; color: #9ca3af; text-align: center; margin-top: 14px; }
+    .privacy-note a { color: #6366f1; }
 
-    /* FAQ */
-    .faq-section { margin-top: 2.5rem; }
-    .faq-section h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1.25rem; }
-    .faq-item {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      margin-bottom: 0.75rem;
-      overflow: hidden;
-    }
-    .faq-q {
-      width: 100%;
-      background: none;
-      border: none;
-      color: var(--text);
-      font-family: inherit;
-      font-size: 0.95rem;
-      font-weight: 600;
-      padding: 1rem 1.25rem;
-      text-align: left;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      transition: color 0.15s;
-    }
-    .faq-q:hover { color: var(--accent); }
-    .faq-q .arrow { font-size: 0.75rem; color: var(--muted); transition: transform 0.2s; flex-shrink: 0; }
-    .faq-item.open .faq-q .arrow { transform: rotate(180deg); }
-    .faq-a { display: none; padding: 0 1.25rem 1rem; color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
-    .faq-item.open .faq-a { display: block; }
-
-    footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 3rem 1.5rem 2rem; }
-    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; }
-    @media (max-width: 768px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; } }
-    .footer-brand p { color: var(--muted); font-size: 0.88rem; margin-top: 0.6rem; line-height: 1.6; }
-    .footer-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
-    .footer-badge { background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.78rem; color: var(--muted); }
-    .footer-col h4 { font-size: 0.8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.85rem; }
-    .footer-col a { display: block; color: var(--muted); text-decoration: none; font-size: 0.88rem; margin-bottom: 0.5rem; transition: color 0.15s; }
-    .footer-col a:hover { color: var(--text); }
-    .footer-bottom { max-width: 1200px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 0.82rem; }
+    footer { background: #fff; border-top: 1px solid #e5e7eb; padding: 40px 1.5rem 24px; margin-top: 40px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-top { display: flex; flex-wrap: wrap; gap: 32px; margin-bottom: 32px; }
+    .footer-brand { flex: 1; min-width: 200px; }
+    .footer-logo { font-size: 1.15rem; font-weight: 700; color: #111827; text-decoration: none; }
+    .footer-logo em { color: #6366f1; font-style: normal; }
+    .footer-desc { font-size: 0.82rem; color: #6b7280; margin-top: 8px; line-height: 1.6; }
+    .footer-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .footer-badge { font-size: 0.75rem; color: #6b7280; }
+    .footer-col h4 { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #9ca3af; margin-bottom: 10px; }
+    .footer-col a { display: block; font-size: 0.85rem; color: #374151; text-decoration: none; margin-bottom: 6px; }
+    .footer-col a:hover { color: #6366f1; }
+    .footer-bottom { border-top: 1px solid #e5e7eb; padding-top: 20px; font-size: 0.8rem; color: #9ca3af; }
   </style>
 </head>
 <body>
 
-  <nav>
-    <div class="nav-inner">
-      <a href="https://toolboxsuite.in/" class="nav-logo">ToolBox<span>Suite</span></a>
-      <div class="nav-links">
-        <a href="https://toolboxsuite.in/remove-background">🖼️ BG Remover</a>
-        <a href="https://toolboxsuite.in/pdf-to-word">📄 PDF→Word</a>
-        <a href="https://toolboxsuite.in/word-to-pdf">📝 Word→PDF</a>
-        <a href="https://toolboxsuite.in/excel-to-pdf">📊 Excel→PDF</a>
-        <a href="https://toolboxsuite.in/pdf-to-excel">📈 PDF→Excel</a>
-        <a href="https://toolboxsuite.in/image-compressor">🗜️ Compressor</a>
-        <a href="https://toolboxsuite.in/pdf-merger">📑 PDF Merger</a>
-        <a href="https://toolboxsuite.in/image-resizer">📐 Resizer</a>
-        <a href="https://toolboxsuite.in/jpg-to-png">🔄 JPG→PNG</a>
-      </div>
-      <a href="https://toolboxsuite.in/remove-background" class="nav-links nav-cta">Try Free →</a>
+<nav>
+  <div class="nav-inner">
+    <a href="https://toolboxsuite.in/" class="logo">ToolBox<em>Suite</em></a>
+    <div class="nav-tools">
+      <a href="https://toolboxsuite.in/remove-background">🖼️ BG Remover</a>
+      <a href="https://toolboxsuite.in/pdf-to-word">📄 PDF→Word</a>
+      <a href="https://toolboxsuite.in/word-to-pdf">📝 Word→PDF</a>
+      <a href="https://toolboxsuite.in/excel-to-pdf">📊 Excel→PDF</a>
+      <a href="https://toolboxsuite.in/pdf-to-excel">📈 PDF→Excel</a>
+      <a href="https://toolboxsuite.in/image-compressor">🗜️ Compressor</a>
+      <a href="https://toolboxsuite.in/pdf-merger">📑 PDF Merger</a>
+      <a href="https://toolboxsuite.in/image-resizer">📐 Resizer</a>
+      <a href="https://toolboxsuite.in/jpg-to-png">🔄 JPG→PNG</a>
     </div>
-  </nav>
+    <a href="https://toolboxsuite.in/remove-background" class="nav-cta">Try Free →</a>
+  </div>
+</nav>
 
-  <section class="hero">
-    <div class="hero-badge">💬 We'd love to hear from you</div>
-    <h1>Get in <span>Touch</span></h1>
-    <p>Report a bug, suggest a new tool, or just say hello — we read every message.</p>
-  </section>
+<main>
+  <h1>Contact us</h1>
+  <p class="subtitle">Got feedback, a bug report, or a tool suggestion? We'd love to hear from you.</p>
 
-  <div class="content">
-    <div class="two-col">
-
-      <!-- FORM -->
-      <div class="form-card">
-        <h2>Send us a message</h2>
-
-        <div class="form-group">
-          <label>Your Name</label>
-          <input type="text" id="name" placeholder="Rahul Sharma" />
+  <div class="contact-layout">
+    <div>
+      <div class="contact-info">
+        <h2>Get in touch</h2>
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div>
+            <div class="info-label">Email</div>
+            <div class="info-val"><a href="mailto:tooboxsuite@gmail.com">tooboxsuite@gmail.com</a></div>
+          </div>
         </div>
-
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" id="email" placeholder="rahul@example.com" />
+        <div class="info-item">
+          <div class="info-icon">⏱️</div>
+          <div>
+            <div class="info-label">Response time</div>
+            <div class="info-val">Usually within 1–2 business days</div>
+          </div>
         </div>
+        <div class="info-item">
+          <div class="info-icon">🇮🇳</div>
+          <div>
+            <div class="info-label">Based in</div>
+            <div class="info-val">Bangalore, India</div>
+          </div>
+        </div>
+      </div>
 
+      <div class="reasons">
+        <h2>What can we help with?</h2>
+        <span class="reason-tag">🐛 Bug report</span>
+        <span class="reason-tag">💡 Feature request</span>
+        <span class="reason-tag">🛠️ New tool idea</span>
+        <span class="reason-tag">🤝 Partnership</span>
+        <span class="reason-tag">🔒 Privacy question</span>
+        <span class="reason-tag">💬 General feedback</span>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <!-- 
+        SETUP INSTRUCTIONS:
+        Replace YOUR_FORM_ID below with your actual Formspree form ID.
+        1. Go to https://formspree.io and create a free account
+        2. Create a new form and copy your form ID
+        3. Replace YOUR_FORM_ID in the action URL below
+        Free plan: 50 submissions/month. Emails go to tooboxsuite@gmail.com
+      -->
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="form-group">
-          <label>Subject</label>
-          <select id="subject">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Deepak Sharma" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">What's this about?</label>
+          <select id="subject" name="subject">
             <option value="">Select a topic…</option>
-            <option value="bug">🐛 Report a bug</option>
-            <option value="feature">💡 Suggest a tool / feature</option>
-            <option value="feedback">⭐ General feedback</option>
-            <option value="privacy">🔒 Privacy question</option>
-            <option value="other">💬 Something else</option>
+            <option value="bug">Bug report</option>
+            <option value="feature">Feature request</option>
+            <option value="tool">New tool suggestion</option>
+            <option value="partnership">Partnership / business</option>
+            <option value="privacy">Privacy question</option>
+            <option value="other">Other</option>
           </select>
         </div>
-
         <div class="form-group">
-          <label>Message</label>
-          <textarea id="message" placeholder="Tell us what's on your mind…"></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Describe what you need help with, or share your idea…" required></textarea>
         </div>
+        <input type="hidden" name="_subject" value="New contact from ToolBoxSuite.in" />
+        <button type="submit" class="submit-btn" id="submit-btn">Send message →</button>
+        <p class="privacy-note">We won't share your email. See our <a href="https://toolboxsuite.in/privacy">Privacy Policy</a>.</p>
+      </form>
 
-        <button class="submit-btn" onclick="handleSubmit()">Send Message →</button>
-        <div class="success-msg" id="successMsg">✅ Message sent! We'll get back to you soon.</div>
+      <div class="success-msg" id="success-msg">
+        <div class="check">✅</div>
+        <h3>Message sent!</h3>
+        <p>Thanks for reaching out. We'll get back to you within 1–2 business days.</p>
       </div>
-
-      <!-- INFO -->
-      <div class="info-stack">
-        <div class="info-card">
-          <span class="info-icon">🐛</span>
-          <div>
-            <h3>Found a bug?</h3>
-            <p>Tell us which tool, what browser you're using, and what went wrong. We fix bugs fast.</p>
-          </div>
-        </div>
-        <div class="info-card">
-          <span class="info-icon">💡</span>
-          <div>
-            <h3>Have a tool idea?</h3>
-            <p>We love suggestions. If you need a tool and it doesn't exist on ToolBoxSuite yet, let us know — we might build it.</p>
-          </div>
-        </div>
-        <div class="info-card">
-          <span class="info-icon">🔒</span>
-          <div>
-            <h3>Privacy questions?</h3>
-            <p>Read our <a href="https://toolboxsuite.in/privacy-policy.html">Privacy Policy</a> or reach out directly. Your files never leave your device — ever.</p>
-          </div>
-        </div>
-        <div class="info-card">
-          <span class="info-icon">⏱️</span>
-          <div>
-            <h3>Response time</h3>
-            <p>We typically respond within 24–48 hours on business days.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- FAQ -->
-    <div class="faq-section">
-      <h2>Frequently asked questions</h2>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Are my files safe when I use ToolBoxSuite? <span class="arrow">▼</span>
-        </button>
-        <div class="faq-a">Yes, 100%. Every tool processes files entirely inside your browser. Nothing is uploaded to any server. When you close the tab, all data is cleared.</div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Is ToolBoxSuite really free forever? <span class="arrow">▼</span>
-        </button>
-        <div class="faq-a">Yes. All 9 tools are completely free with no watermarks, no daily limits, and no subscription required. We have no plans to change this.</div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Which browsers are supported? <span class="arrow">▼</span>
-        </button>
-        <div class="faq-a">Any modern browser works — Chrome, Firefox, Edge, Safari (desktop and mobile). We recommend Chrome or Edge for best performance on AI-based tools like the Background Remover.</div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Can I suggest a new tool? <span class="arrow">▼</span>
-        </button>
-        <div class="faq-a">Absolutely! Use the contact form above and select "Suggest a tool / feature". We review all suggestions and often build the most requested ones.</div>
-      </div>
-
     </div>
   </div>
+</main>
 
-  <footer>
-    <div class="footer-inner">
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
       <div class="footer-brand">
-        <a href="https://toolboxsuite.in/" class="nav-logo">ToolBox<span style="color:var(--accent)">Suite</span></a>
-        <p>Free online tools — 100% private, runs in your browser. Your files never leave your device.</p>
+        <a href="https://toolboxsuite.in/" class="footer-logo">ToolBox<em>Suite</em></a>
+        <p class="footer-desc">Free online tools — 100% private, runs in your browser. Your files never leave your device.</p>
         <div class="footer-badges">
           <span class="footer-badge">🔒 100% Private</span>
           <span class="footer-badge">⚡ No Sign-up</span>
@@ -342,46 +224,47 @@
       <div class="footer-col">
         <h4>Info</h4>
         <a href="https://toolboxsuite.in/">Home</a>
-        <a href="https://toolboxsuite.in/about.html">About</a>
-        <a href="https://toolboxsuite.in/privacy-policy.html">Privacy Policy</a>
-        <a href="https://toolboxsuite.in/contact.html">Contact</a>
+        <a href="https://toolboxsuite.in/about">About</a>
+        <a href="https://toolboxsuite.in/privacy">Privacy Policy</a>
+        <a href="https://toolboxsuite.in/contact">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
       © 2025 ToolBoxSuite.in · All processing happens in your browser. Your files never leave your device. Made with ❤️ in India 🇮🇳
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script>
-    function toggleFaq(btn) {
-      const item = btn.closest('.faq-item');
-      item.classList.toggle('open');
-    }
+<script>
+  const form = document.getElementById('contact-form');
+  const btn = document.getElementById('submit-btn');
+  const successMsg = document.getElementById('success-msg');
 
-    function handleSubmit() {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const subject = document.getElementById('subject').value;
-      const message = document.getElementById('message').value.trim();
-
-      if (!name || !email || !subject || !message) {
-        alert('Please fill in all fields before sending.');
-        return;
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        successMsg.style.display = 'block';
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Send message →';
+        alert('Something went wrong. Please email us directly at tooboxsuite@gmail.com');
       }
-      if (!email.includes('@')) {
-        alert('Please enter a valid email address.');
-        return;
-      }
-
-      // Replace this with your actual form backend (Formspree, EmailJS, etc.)
-      // Example with Formspree: fetch('https://formspree.io/f/YOUR_ID', {...})
-      document.getElementById('successMsg').style.display = 'block';
-      document.getElementById('name').value = '';
-      document.getElementById('email').value = '';
-      document.getElementById('subject').value = '';
-      document.getElementById('message').value = '';
+    } catch {
+      btn.disabled = false;
+      btn.textContent = 'Send message →';
+      alert('Network error. Please email us at tooboxsuite@gmail.com');
     }
-  </script>
+  });
+</script>
 
 </body>
 </html>
