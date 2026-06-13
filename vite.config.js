@@ -15,9 +15,6 @@ export default defineConfig({
         pdfMerger:          resolve(__dirname, 'pdf-merger.html'),
         imageResizer:       resolve(__dirname, 'image-resizer.html'),
         jpgToPng:           resolve(__dirname, 'jpg-to-png.html'),
-        about: resolve(__dirname, 'about.html'),
-        privacyPolicy: resolve(__dirname, 'privacy-policy.html'),
-        contact: resolve(__dirname, 'contact.html'),
       }
     }
   }
